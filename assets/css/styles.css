@@ -1,0 +1,82 @@
+/* Seven Seas Spa: shared styles for every page */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3B2F2F;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-custom {
+    --bs-navbar-color: #3B2F2F;
+    --bs-navbar-hover-color: #3B2F2F;
+    --bs-navbar-brand-color: #3B2F2F;
+    --bs-navbar-brand-hover-color: #3B2F2F;
+    --bs-navbar-active-color: #3B2F2F;
+}
+
+.navbar-custom .nav-link.active {
+    font-weight: 600;
+}
+
+/* Hero: the path starts from this CSS file, so ../ goes up to assets */
+.hero {
+    background: url("../images/hero.png") no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 120px 0;
+}
+
+.hero h1,
+.hero .lead {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-part-1 {
+    display: block;
+    font-family: "Handlee", cursive;
+}
+
+.hero-part-2 {
+    display: block;
+    font-weight: bold;
+}
+
+/* Service cards */
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover,
+.card:focus {
+    transform: translateY(-4px);
+}
+
+/* Testimonials */
+.testimonial {
+    padding: 0 60px;
+}
+
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Footer */
+.footer {
+    background-color: #3B2F2F;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
